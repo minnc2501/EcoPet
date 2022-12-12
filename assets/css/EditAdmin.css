@@ -1,0 +1,80 @@
+body{
+    font-size: 15px;
+}
+#header{
+    padding-bottom: 140px;
+}
+table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: rgb(252, 236, 238);
+    width: 100%;
+    height: fit-content;
+    
+}
+.button{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    float: right;
+}
+.edit_product{
+    width: 80%; 
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+td{
+    border:1px solid;
+    border-color: pink;
+    padding-left: 10px;
+}
+#input1{
+    width: 98%;
+    height: 30px;
+    margin: 5px;
+    
+}
+#input2{
+    width: 98%;
+    height: 30px;
+    margin: 5px;
+}
+#textarea3{
+    width: 98%;
+    height: 150px;
+    margin: 5px;
+}
+#textarea4{
+    width: 98%;
+    height: 250px;
+    margin: 5px;
+}
+#textarea5{
+    width: 98%;
+    height: 100px;
+    margin: 5px;
+}
+#input6{
+    width: 98%;
+    margin: 5px;
+}
+.width1{
+    width: 20%;
+}
+#time{
+    display:inline-flex; 
+    margin: 5px;
+}
+
+
+
+/* Mobile */
+@media (max-width:739px) {
+    .tbl_product{
+        font-size: 12px;
+    }
+    .button{
+        font-size: 12px;
+    }
+}
+  

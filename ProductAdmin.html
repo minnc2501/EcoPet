@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductAdmin</title>
+
+    <link rel="stylesheet" href="assets/css/ProductAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("HeaderAdmin.html");
+            
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,300;1,500&family=Quicksand:wght@300;400&display=swap');
+    </style>
+
+
+</head>
+<body>
+    <header id="header" ></header>
+    <div class="product">
+        <h2>DANH SÁCH SẢN PHẨM</h2>
+        <div class="title">
+            <input id="find" type="text" placeholder="Tìm kiếm...">
+            <a href="EditProductAdmin.html"><input id="new" type="button" name="CreateNew" value="Tạo mới"> </a>
+        </div>
+        <div class="product_list">
+           <table class="list">
+                <col class="width1" />
+                <col class="width2" />
+                <col class="width3" />
+                <col class="width4" />
+                <col class="width5" />
+                <col class="width6" />
+                <tr>
+                    <th>STT</th>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Hình ảnh</th>
+                    <th>Edit</th>
+                </tr>
+                <tr align="center">
+                    <td>1</td>
+                    <td>Eco01</td>
+                    <td><a href="">Thức ăn hạt khô ANF cho chó</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/1.jpg" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td>Eco02</td>
+                    <td><a href="">Thức ăn hạt khô cho chó con và chó trưởng thành</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/2.jpg" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>3</td>
+                    <td>Eco03</td>
+                    <td><a href="">Hạt dành cho mèo trưởng thành mèo lông dài</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/3.png" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>4</td>
+                    <td>Eco04</td>
+                    <td><a href="">Hạt dành cho mọi giống chó con</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/4.png" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>5</td>
+                    <td>Eco05</td>
+                    <td><a href="">Pate cho chó vị gà và khoai lang</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/5.jpg" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>6</td>
+                    <td>Eco06</td>
+                    <td><a href="">Bánh Quy Bowwow Biscuit Hỗn Hợp</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/6.jpg" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>7</td>
+                    <td>Eco07</td>
+                    <td><a href="">Pate moochie giúp phát triển khoẻ mạnh cho chó </a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/7.png" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>8</td>
+                    <td>Eco08</td>
+                    <td><a href="">Pate sữa dê KC thịt gà và cua</a></td>
+                    <td>200.000</td>
+                    <td><img src="assets/img/ProductAdmin/8.png" id="product_image"></td>
+                    <td>
+                        <a href="EditProductAdmin.html"><img src="assets/img/ProductAdmin/edit.png" id="icon"></a>
+                    </td>
+                </tr>
+                
+           </table>
+           
+        </div>
+
+    </div>
+    
+</body>
+</html>

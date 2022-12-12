@@ -1,0 +1,107 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.order{
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 50px;
+    
+}
+.order_list{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;   
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    
+}
+table {
+    width: 100%;
+    font-size: 15px;
+    border-spacing: 0;
+} 
+.list{
+    
+    overflow-x:auto;
+}
+th{
+    background-color: #ff9dbe;
+    
+}
+table th,
+table td {
+    padding: 10px;
+}
+tr:hover{
+    background-color: #faccdb;
+}
+/* tr:nth-child(even){background-color: #faccdb} */
+.title{
+    display: inline-block;
+    font-size: 150%;
+    width: 100%;
+    padding: 10px;
+    background-color: #fcdbe6;
+}
+#find{
+    margin: 10px;
+    width: 30%;
+}
+
+
+
+.width1 {
+    width: 5%;
+    height: fit-content;
+}
+.width2 {
+    width: 10%;
+    height: fit-content;
+}
+.width3 {
+    width: 15%;
+    height: fit-content;
+}
+.width4 {
+    width: 20%;
+    height: fit-content;
+}
+.width5 {
+    width: 20%;
+    height: fit-content;
+}
+.width6 {
+    width: 15%;
+    height: fit-content;
+}
+.width7 {
+    width: 15%;
+}
+#new{
+    font-weight: bold;
+    color: black;
+}
+#done{
+    font-weight: bold;
+    color: rgb(84, 232, 84);
+}
+#cancel{
+    font-weight: bold;
+    color: red;
+}
+#yet{
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+}
+#paid{
+    font-weight: bold;
+    color: rgb(84, 232, 84);
+}
+@media (max-width: 540px){
+    table {
+        width: 100%;
+        font-size: 70%;
+        border-spacing: 0;
+    } 
+    
+}

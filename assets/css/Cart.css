@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+:root {
+    --primary: #fdcfc5;
+    --secondary: #ff9dbe;
+    --text-color: #473c38;
+    --background1: #fcdbe6;
+    --background2: #ff9dbe;
+    --color1: #ab3c61;
+    --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+    --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+    --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+    --omrs-color-interaction: #1e4bd1;
+    --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+    --omrs-color-danger: #b50706;
+    --omrs-color-bg-low-contrast: #fff;
+    --omrs-color-ink-high-contrast: #121212;
+    --omrs-color-bg-high-contrast: #ffffff;
+}
+* {
+    
+    box-sizing: border-box;
+}
+main{
+    font-family: Quicksand;
+}
+.rounded {
+    border-radius: 0.5rem;
+}
+.border{
+    border: 1px solid var(--text-color);
+}
+.b1 {
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.b2 {
+    background: var(--background1);
+}
+
+.b3 {
+    background: var(--background2);
+}
+
+.b4 {
+    background-image: url(../img/bg1.jpg);
+    background-size: 200%;
+    background-position: bottom;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.text-red{
+    color: red;
+}
+
+
+
+.center {
+    justify-content: center;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.m0 {
+    margin: 0px;
+}
+
+.m1 {
+    margin: 30px;
+}
+
+.m2 {
+    margin: 20px;
+}
+
+.m3 {
+    margin: 10px;
+}
+
+.p0 {
+    padding: 50px;
+}
+
+.p1 {
+    padding: 30px;
+}
+
+.p2 {
+    padding: 20px;
+}
+
+.p3 {
+    padding: 10px;
+}
+.p4 {
+    padding: 25px;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-10 {
+    height: 10%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-100 {
+    height: 100%;
+}
+.h-fit {
+    height: fit-content;
+}
+
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+header {
+    position: relative;
+}
+main {
+    background: var(--background1);
+    padding-top: 50px;
+}
+.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+.input-group {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+.input-group * {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+}
+
+.input-group > *:first-child {
+    border-radius: 1.2vh 0 0 1.2vh;
+    width: 300px;
+}
+
+input {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+input:active {
+    outline: palevioletred;
+}
+.input-group > *:nth-child(2) {
+    border-radius: 0 1.2vh 1.2vh 0;
+}
+.btn-primary {
+    outline: none;
+    border: none;
+    background: #ab3c61;
+    color: white;
+    padding: 10px 10px;
+    
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-primary:hover {
+    background: var(--secondary);
+    /* color: black; */
+}
+.btn-secondary {
+    outline: none;
+    border: none;
+    background: var(--color1);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.btn-secondary:hover {
+    background: black;
+}
+.left-side {
+    width: 25%;
+}
+.left-side ul {
+    list-style-type: none;
+}
+.red {
+    background: red;
+}
+
+input[type="checkbox"]:checked + label {
+    color: var(--secondary);
+}
+input[type="checkbox"] + label::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--text-color);
+    left: 50%;
+    bottom: 0px;
+    transition: all 0.4s ease-in-out;
+}
+input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+}
+input[type="checkbox"]:hover + label::after {
+    width: 100%;
+    left: 0;
+}
+input,
+textarea {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.inputgroup {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+}
+
+.inputgroup input[type="button"] {
+    background-color: var(--color1);
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+    border: none;
+}
+.inputgroup input[type="button"]:hover {
+    background: var(--secondary);
+}
+
+.inputgroup .button-minus,
+.inputgroup .button-plus {
+    font-weight: bold;
+    height: 38px;
+    padding: 0;
+    width: 38px;
+    position: relative;
+}
+    .btnDelete{
+    width: 5%;
+    }
+.inputgroup .quantity-field {
+    position: relative;
+    height: 38px;
+    left: -6px;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+}
+
+.button-plus {
+    left: -13px;
+}
+
+
+
+input[name="image-tool"] {
+    display: none;
+}
+input[name="image-tool"]:checked + label {
+    color: red;
+}
+
+.tool {
+    border: 0.5px solid black;
+    width: 100px;
+    cursor: pointer;
+}
+.relative {
+    position: relative;
+}
+.customized-product {
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    position: absolute;
+}
+.custom-product-label {
+    position: absolute;
+    width: 25%;
+    left: 37.5%;
+    top: 40%;
+    z-index: 99;
+}
+.label-container {
+    width: 60%;
+    margin: 0 auto;
+    background: #fff2ef;
+}
+.overflow-hidden {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.container{
+    width: 90%;
+}
+.child1{
+    width: 70%;
+
+}
+.child2{
+    align-self: flex-start;
+    width: 30%;
+    margin: 20px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.tablequantity{
+    width: 60%; 
+    min-width: 200px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fa-heart{
+    font-size: 1.2rem;
+}
+@media only screen and (min-width:740px) and (max-width: 1023px){
+    
+    .child1{
+        width: 100%;
+        min-width: 28em;
+
+    }
+    .child2{
+        width: 80%;
+        min-width: 14em;
+
+    }
+    .card-item{
+        width: 100%;
+    }
+    .inputgroup .button-minus,
+    .inputgroup .button-plus {
+        font-weight: bold;
+        height: 28px;
+        padding: 0;
+        width: 28px;
+        position: relative;
+    }
+    .btnDelete{
+        width: 5%;
+    }
+    .inputgroup .quantity-field {
+        position: relative;
+        height: 28px;
+        left: -6px;
+        text-align: center;
+        width: 42px;
+        display: inline-block;
+        font-size: 13px;
+        margin: 0 0 5px;
+        resize: vertical;
+    }
+}
+@media only screen and (min-width: 400px) and  (max-width: 739px) {
+    .container{
+    width: 100%;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    h3{
+    font-size: 0.75em;
+    }
+    h2{
+    font-size: 1em;
+    }
+    h1{
+    font-size: 1.25em;
+    }
+    #total1{
+    font-size: 1em;
+    }
+    .child1{
+    width: 100%;
+    min-width: 28em;
+    align-self: center;
+    }
+    .child2{
+    width: 50%;
+    align-self: center;
+    min-width: 14em;
+    align-self: center;
+    }
+    .card-item{
+    width: 100%;
+        }
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+    width: 100%;
+    flex-direction: column;
+    }
+    h3{
+    font-size: 0.65em;
+    }
+    h2{
+    font-size: 0.9em;
+    }
+    h1{
+    font-size: 1.15em;
+    }
+    #total1{
+    font-size: 0.9em;
+    }
+    .child1{
+    min-width: 16em;
+    width: 100%;
+    padding: 10px;
+    
+    }
+    .tablequantity{
+    min-width: 12em;
+    }
+
+    .child2{
+    width: 80%;
+    margin: 0px;      
+    align-self: center;      
+    }
+    img{
+    width: 90px;
+    height: 90px;
+    }
+    .card-item{
+    width: 60%;
+        }
+    .btnDelete{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    }
+    .right{
+    padding-left: 20px;
+    padding-right: 20px ;
+    }
+    .space-between{
+    margin: 0px;
+    }
+}

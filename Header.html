@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Admin</title>
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="grid wide">
+            <nav class="header__navbar hide-on-mobile-tablet">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr  header__navbar-item-link--separate">
+                            Vào cửa hàng trên ứng dụng Ecopet
+                            <!-- Header QR code -->
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-dowload-img">  
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-dowload-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <i class="header__navbar-item-link"><span class="header__navbar--title-no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com/shop.ecopet" class="header__navbar-icon-link"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@ecopet.com" class="header__navbar-icon-link"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/ecopetvn/" class="header__navbar-icon-link"><i class="fab fa-instagram"></i></a>
+                        </i>
+                    </li>
+                </ul>              
+
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="#" class="header__navbar-item-link ">
+                            <i class="far fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header_notify">
+                            <div class="body_notify">
+                                <div class="body_notify-link">
+                                    <img class="body_notify-img" src="./assets/img/thongbao.png" alt="">
+                                    <p>Đăng nhập để nhận thông báo</p>
+                                </div>                               
+                            </div>
+                            <div class="footer_notify">
+                                <p>Đăng nhập</p>
+                                <p>Đăng ký</p>
+                            </div>
+                        </div>
+ 
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">
+                            <i class="far fa-question-circle"></i>
+                            Trợ giúp</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item-dangky">
+                        <a href="Signup.html" class="header__navbar-item-link header__navbar-item-link--strong header__navbar-item-link--separate">Đăng ký</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item-dangnhap">
+                        <a href="Login.html" class="header__navbar-item-link header__navbar-item-link--strong ">Đăng nhập</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- Header with search -->
+            <div class="header-with-search ">
+                <label for="mobile-search-checkbox" class="header__mobile-search">
+                    <i class="fas fa-search header__mobile-search-icon"></i>
+                </label>
+
+                <div class="header__logo hide-on-tablet">
+                    <a href="Home.html" class="header__logo-link">
+                        <img class="header__logo-img" src="./assets/img/Logo2-01 (1).png" alt="">
+                    </a>
+                </div>
+                
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-search-checkbox">
+                    <!-- Search history -->
+                <div class="header__search">
+                        <div class="header__search-input-wrap ">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-selection">
+                            <span class="header__search-select-label">Hàng có sẵn</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            <ul class="header__search-selection-option">
+                                <li class="header__search-selection-option-item header__search-selection-option-active">
+                                    <span>Hàng có sẵn</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-selection-option-item">
+                                    <span>Hàng sắp về</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                </div>
+
+                    <!-- Cart layout -->
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <span class="header__cart-notice">6</span>
+                        <!-- No cart: header__cart-list--no-cart -->
+                        <div class="header__cart-list ">
+                            <img class="header__cart-no-cart-img" src="./assets/img/no-cart.png" alt="">
+                            <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+
+                            <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                            <ul class="header__cart-list-item">
+                                <!-- Card item -->
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="./assets/img/ThucAn1.webp" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">₫ 120.000</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">Phân loại: Trưởng thành</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <a class="btn header__cart-item-btn btn--primary" href="Cart.html">Xem giỏ hàng</a>
+
+                        </div>
+                    </div>
+                    <div class="header__user-wrap hide-on-mobile-tablet">
+                        <div class="header__navbar-item header__navbar-user">
+                            <a href="User.html"><img src="./assets/img/avatardefault.png" alt="" class="header__navbar-user-img"></a>
+                            <span class="header__navbar-user-name">EcoPet</span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item"><a href="User.html">Tài khoản của tôi</a></li>
+                                <li class="header__navbar-user-item"><a href="">Địa chỉ của tôi</a></li>
+                                <li class="header__navbar-user-item"><a href="">Đơn mua</a></li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate"><a href="">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <ul class="header__sort-bar">
+            <li class="header__sort-item header__sort-item--active">
+                <a href="Home.html" class="header__sort-link ">Trang chủ</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="Product.html" class="header__sort-link">Sản phẩm</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="Blog.html" class="header__sort-link">Blog</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="AboutUs.html" class="header__sort-link">About us</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="Contact.html" class="header__sort-link">Liên hệ</a>
+            </li>
+        </ul>
+        <nav class="header__navigationBar hide-on-mobile-tablet
+            <div class="grid wide">
+                <ul class="header__navigationBar-list">
+                    <li class="header__navigationBar-item">
+                        <a href="Home.html">Trang chủ</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="Product.html">Sản phẩm</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="Blog.html">Blog</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="AboutUs.html">About us</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="Contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

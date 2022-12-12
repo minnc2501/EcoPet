@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/User.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>EcoPet | Trang cá nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header id="header" ></header>
+
+    <div style="height: 550px;" class="user">
+        <table style="width:100%">
+          <tr>
+                <td>
+                  <div class="TaiKhoan">
+                      <img src="assets/img/Logo.png" alt="avatar" style="margin: 5px; border-radius: 50%; border: 2px solid #fff; " >
+                      <br>
+                      <div class="Name" style="margin-top: 5px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: bold; font-weight: bolder ;"><i>Võ Thị Lan</i></div>
+                      <div style=" font-size: medium; font-family: Quicksand; font-style: normal; font-weight: normal; font-size: 15px; line-height: 22px;"><i>Chỉnh sửa hồ sơ</i></div>
+                      <br>
+                      <input type="submit" value="Tài khoản của tôi" style="margin: 5px; cursor: pointer;">
+                      <br>
+                      <input type="submit" value="Cài đặt" style="margin: 5px;  cursor: pointer;">
+                      <br>
+                      <input type="submit" value="Thông báo" style="margin: 5px;  cursor: pointer;">
+                      <br>
+                      <input type="submit" value="Trung tâm trợ giúp" style="margin: 5px;  cursor: pointer;">
+                      <br>
+                      <button type="button"style="margin: 5px;  cursor: pointer; background: #FEE7E2;">Đăng xuất</button>
+                  </div>
+                </td>
+              
+                <td>
+                    <section class="section">
+                        <div class="DonHang">
+                            <div class="tab-header">
+                                <div class="active">Đơn hàng hiện tại</div>
+                                <div>Đơn hàng đã giao</div>
+                            </div>
+                            <br>
+                            <hr color="white">
+                    </section>
+                    
+                
+                </td>
+          </tr>
+  
+        </table>
+  </div>
+    <footer id="footer"></footer>
+
+</body>
+</html>

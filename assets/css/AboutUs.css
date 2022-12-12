@@ -1,0 +1,385 @@
+body{
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 15px;
+  
+}
+.AboutUs{
+  width: 80%; 
+  margin: 0 auto; 
+  line-height: 25px;
+}
+#header{
+  padding-bottom: 132px;
+  margin-bottom: 32px;
+}
+
+.intro{
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  width: 100%;
+  color: #123c69;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.title1{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.justify {
+  text-align: justify;
+  margin-top: 10px;
+}
+.content2{
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#img1{
+  float:right; 
+  margin-left: 20px;
+  width:35%;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+  
+} */
+.tbl_element{
+  width: 100%;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 0 auto;
+  
+}
+#element{
+  text-align:justify;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+#img_element{
+  width: 300px;  
+  border-radius: 10px;
+}
+
+
+#img_slider{
+  width: 100%;
+  
+}
+
+/* Image-container design */
+.image-container {
+  width: 100%;
+  position: relative;
+  margin-top: 32px;
+}
+
+.next {
+  right: 0;
+}
+
+/* Next and previous icon design */
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  margin-top: -25px;
+}
+
+/* caption decorate */
+.captionText {
+  color: #000000;
+  font-size: 14px;
+  position: absolute;
+  padding: 12px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Slider image number */
+.slideNumber {
+  background-color: #5574C5;
+  color: white;
+  border-radius: 25px;
+  right: 0;
+  opacity: .5;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+}
+.fa {
+  font-size: 32px;
+}
+
+.fa:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+  color: white;
+}
+
+.footerdot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active,
+.footerdot:hover {
+  background-color: black;
+}
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@400&display=swap');
+
+
+
+.container{
+    position: relative;
+    width: 800px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 300%;
+    /* 300% 'caz we have 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card{
+    width: 800px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.card-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #faccdb;
+    color: #123c69;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.card-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.review{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.rating{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-star{
+    width: 20px;
+    margin-right: 5px;
+    color: #123c69;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #123c69;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #123c69;
+}
+
+
+/* Mobile */
+@media (max-width:739px) {
+  .container{
+    width: 50%;
+    margin: auto;
+  }
+
+  .card{
+      flex-direction: column;
+      
+  }
+  .card-thumb{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .card-body{
+      width: 100%;
+      min-height: auto;
+      margin-left: 0;
+  }
+  .title{
+    text-align: center;
+    width: 100%;
+    color: #123c69;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .title1{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  p{
+    font-size: 13px;
+  }
+  .table1{
+    overflow-x:auto;
+  }
+  table {
+    width: 100%;
+  }
+  th, td {
+  text-align: left;
+  padding: 8px;
+  }
+  #img_element{
+    width: 250px;  
+    border-radius: 10px;
+  }
+  #img1{
+    margin-top: -100px;
+    width:100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*Tablet */
+@media (min-width:740px) and (max-width: 1023px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+    .title{
+      text-align: center;
+      width: 100%;
+      color: #123c69;
+      font-size: 25px;
+      line-height: 1.2;
+    }
+    .title1{
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    p{
+      font-size: 18px;
+    }
+    .table1{
+      overflow-x:auto;
+    }
+    table {
+      width: 100%;
+    }
+    th, td {
+    text-align: left;
+    padding: 8px;
+    }
+    #img_element{
+      width: 250px;  
+      border-radius: 10px;
+    }
+    #img1{
+      margin-top: -100px;
+      width:100%;
+      margin-bottom: 20px;
+    }
+   
+}

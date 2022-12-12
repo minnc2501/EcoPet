@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPet | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/payment.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+       
+    
+</head>
+<body>
+    <header id="header" ></header>
+
+    <main>
+        <div class="flex-col align-center" >
+          <h1 class="text-center" id="big-title" >
+          Thanh toán </h1> 
+          
+            <div class="container flex-row">
+              <div class="flex-col child1">
+                <!-- THÔNG TIN GIAO HÀNG -->
+                <section id="target" class="ThirdSection">
+                  
+                  <h2 class="headerSection text-center" id="title">Thông tin giao hàng</h2>
+                  <a href=""><h3  style="text-align: end; text-decoration: underline; ">Đổi địa chỉ</h3></a>
+               <br>
+                  <form class="grid-container-info" action="">
+              
+                    <div class="grid-item">
+                      <input type="text" name="name" placeholder="Họ và tên:">
+                    </div>
+                    <div class="grid-item">
+                      <input type="tel" name="phone" placeholder="Số điện thoại:">
+                    </div>
+                    <div class="grid-item">
+                      <input type="email" name="mail" placeholder="Email:">
+                    </div>
+              
+                    <div class="grid-item">
+                      <input type="text" name="address" placeholder="Địa chỉ:">
+                    </div>
+                    <div class="grid-item">
+                      <select>
+                        <option value="" style="color: #999;" disabled selected>Quận/Huyện:</option>
+                        <option value="Q1">Quận 1</option>
+                        <option value="Q2">Quận 2</option>
+                        <option value="Q3">Quận 3</option>
+                        <option value="Q7">Quận 7</option>
+                      </select>
+                    </div>
+                    <div class="grid-item">
+                      <select>
+                        <option value="" style="color: #999;" disabled selected>Tỉnh/Thành:</option>
+                        <option value="">Thành phố Hồ Chí Minh</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Bình Dương</option>
+                        <option value="">Đồng Nai</option>
+
+                        <option value="">Vũng Tàu</option>
+
+                      </select>
+                    </div>
+                  </form>
+                </section>
+                <!-- PHƯƠNG THỨC THANH TOÁN -->
+                <section class="FourthSection">
+          
+                  <h2 class="headerSection text-center" id="title">Phương thức thanh toán</h2>
+                  <div class="flex-row radiogroup">
+                      <!-- Radio 1 -->
+                      <div class="rad-input-group">
+                        <label>
+                          <input type="radio" name="payment" id="">
+                          Thanh toán khi nhận hàng
+                        </label>
+                      </div>
+
+                      <!-- Radio 2  -->
+                      <div class="rad-input-group">
+                        <label>
+                          <input type="radio" name="payment" id="">
+                          Chuyển khoản ngân hàng
+                        </label>
+                      </div>
+                  </div>
+                 
+                  
+                </section>
+              </div>
+              <div class="child2 flex-col h-fit" >
+               
+                <!-- ÁP DỤNG MÃ GIẢM GIÁ -->
+                <div class=" flex-col align-center " style="background-color: #fcdbe6; padding: 20px; border-radius: 10px;">
+                    <h2 class="text-center" style="margin-bottom: 5px;">Áp dụng mã giảm giá </h2>
+                    <div class="inputgroup flex-row center">
+                        <input class="w-75" type="text">
+                        <input class="white-text" type="button" value="THÊM">
+                    </div>
+                    
+                    
+                </div>
+                <br>
+              
+                <!-- THÔNG TIN ĐƠN HÀNG  -->
+
+                <div class="flex-col align-center p2" style="background-color: #fcdbe6; border-radius: 10px;">
+                    <h2 class="m0 text-center" >Thông tin đơn hàng</h2>
+                    <br>
+                    <!-- Sản phẩm 1 -->
+                    <Table style="background-color: #fff;">
+                      <tr>
+                        <td style="width: 70%">
+                          <h3 >Equilibrio adult salmon 1.5kg – Hạt dành cho mèo trưởng thành vị cá hồi
+                          </h3>
+                        </td>
+                        <td style="width: 30%; padding-left: 15px;"">
+                          <div class="flex-col">
+                            <h4 >Số lượng: 1</h4>
+                            <h4 >Đơn giá: 259.000</h4>
+                          </div>
+                        </td>
+                      </tr>
+                    </Table>
+                    <!-- Sản phẩm 2 -->
+                    <Table style="background-color: #fff;">
+                      <tr>
+                        <td style="width: 70%;">
+                          <h3 >Prunus natural herb shampoo – sữa tắm chứa thảo mộc và chất kháng khuẩn tự nhiên 500ml
+                          </h3>
+                        </td>
+                        <br>
+                        <td style="width: 30%;padding-left: 15px;">
+                          <div class="flex-col">
+                            <h4 >Số lượng: 1</h4>
+                            <h4 >Đơn giá: 230.000</h4>
+                          </div>
+                        </td>
+                      </tr>
+                    </Table>
+                    <br>
+                    <table>
+                        <tr >
+                            <td style="padding: 10px;">
+                                <h3 class="m0">Giá trị đơn hàng:</h3>
+                            </td>
+                            <td style="padding: 10px;">
+                                <h3 id="total2" class="m0" style="padding-left: px;">950.000</h3>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td style="padding: 10px;">
+                                <h3 class="m0">Phí giao hàng:</h3>
+                            </td>
+                            <td style="padding: 10px;">
+                                <h3 class="m0" >0.0</h3>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td ></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">
+                                <h3 class="m0">Tổng cộng:</h3>
+                            </td>
+                            <td style="padding: 10px;">
+                                <h3 class="m0"  >950.000</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="summary-checkout">
+                      <a href="Cart.html"><button class="checkout-cta " onclick="alert('Đặt hàng thành công!')">Hoàn tất đơn hàng</button></a>
+                    </div>
+                </div>
+              </div>
+                
+                
+                
+                
+              </div>
+            </div>       
+            <footer id="footer"></footer>
+            <script src="assets/app/giohang.js"></script>
+            <script src="app/app.js" async></script>
+          
+        </div>
+      </main>
+      
+      
+       
+    
+    <footer id="footer"></footer>
+
+
+    
+</body>
+</html>

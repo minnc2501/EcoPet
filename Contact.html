@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>EcoPet | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header id="header" ></header>
+
+    <div class="contact">
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">669 QL1A, Khu phố 3, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fa fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">033 790 2072</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fa fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">shop.ecopet@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h1 style="color: #AC3B61;">Bạn cần hỗ trợ?</h1>
+                    <h2 style="font-weight: lighter;">EcoPet rất hân hạnh được hỗ trợ bạn, hãy để lại thông tin cho chúng tôi nhé!</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Nhập tên của bạn" id="Name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Nhập email của bạn" id="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Nội dung" id="Content"></textarea>
+                        </div>
+                        <div class="input-box message-box"></div>
+                        <div class="button">
+                            <input type="button" value="Send Now" onclick="Submit()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer"></footer>
+    <script>
+        function Submit() {
+            document.getElementById("Name").value = '';
+            document.getElementById("Name").focus();
+            document.getElementById("Email").value = '';
+            document.getElementById("Content").value = '';
+            alert('Cảm ơn bạn đã liên hệ!'); 
+        }
+    </script>
+</body>
+</html>

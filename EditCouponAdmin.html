@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditProductAdmin</title>
+    <link rel="stylesheet" href="assets/css/EditAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("HeaderAdmin.html");
+            
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,300;1,500&family=Quicksand:wght@300;400&display=swap');
+    </style>
+
+    <script>
+        function addDYM(){
+            var date_min = 1,
+                date_max = 30,
+                select = document.getElementById('date1');
+
+            for (var i1 = date_min; i1<=date_max; i1++){
+            var opt = document.createElement('option');
+            opt.value = i1;
+            opt.innerHTML = i1;
+            select.appendChild(opt);
+            }
+
+            var month_min = 1,
+                month_max = 12,
+                select = document.getElementById('month1');
+
+            for (var i2 = month_min; i2<=month_max; i2++){
+            var opt = document.createElement('option');
+            opt.value = i2;
+            opt.innerHTML = i2;
+            select.appendChild(opt);
+            }
+
+            var year_min = 2000,
+                year_max = 2022,
+                select = document.getElementById('year1');
+
+            for (var i3 = year_min; i3<=year_max; i3++){
+            var opt = document.createElement('option');
+            opt.value = i3;
+            opt.innerHTML = i3;
+            select.appendChild(opt);
+            }
+
+
+            var date_min = 1,
+                date_max = 30,
+                select = document.getElementById('date2');
+
+            for (var i1 = date_min; i1<=date_max; i1++){
+            var opt = document.createElement('option');
+            opt.value = i1;
+            opt.innerHTML = i1;
+            select.appendChild(opt);
+            }
+
+            var month_min = 1,
+                month_max = 12,
+                select = document.getElementById('month2');
+
+            for (var i2 = month_min; i2<=month_max; i2++){
+            var opt = document.createElement('option');
+            opt.value = i2;
+            opt.innerHTML = i2;
+            select.appendChild(opt);
+            }
+
+            var year_min = 2000,
+                year_max = 2022,
+                select = document.getElementById('year2');
+
+            for (var i3 = year_min; i3<=year_max; i3++){
+            var opt = document.createElement('option');
+            opt.value = i3;
+            opt.innerHTML = i3;
+            select.appendChild(opt);
+            }
+        }
+    </script>
+</head>
+<body onload="addDYM()">
+    <header id="header" ></header>
+
+    <div class="edit_product">
+        <h3>THÊM/SỬA MÃ GIẢM GIÁ</h3>
+        <div class="button">
+            <a href="EditCouponAdmin.html"><button style="background-color: rgb(246, 136, 154); border-color: pink;" onclick="alert('Lưu dữ liệu thành công');">Lưu thông tin</button></a>
+            <a href="CouponAdmin.html"><button style="background-color: rgb(246, 136, 154); border-color: pink;" onclick="alert('Cập nhật sản phẩm thành công');">Lưu & thoát</button></a>
+            <a href="CouponAdmin.html"><button style="background-color: rgb(246, 136, 154); border-color: pink;">Quay về</button></a>
+        </div>
+        <table class="tbl_product">
+            <col class="width1" />
+            <col class="width2" />
+
+            <tr >
+                <td>Tên</td>
+                <td><input id="input1" type="text" name="Name"></td>
+            </tr>
+            <tr>
+                <td>Mã</td>
+                <td><input id="input2" type="text" name="Name"></td>
+            </tr>
+            <tr>
+                <td>Ngày bắt đầu</td>
+                <td >
+                    <div id="time">
+                        Ngày: &nbsp;
+                        <form action="" >
+                            <select id="date1" >
+                            </select>
+                        </form> &nbsp;
+                        Tháng:&nbsp;
+                        <form action="">
+                            <select id="month1">
+                            </select>
+                        </form> &nbsp;
+                        Năm: &nbsp;
+                        <form action="">
+                            <select id="year1">
+                            </select>
+                        </form> &nbsp;
+                    </div> 
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày kết thúc</td>
+                <td >
+                    <div id="time">
+                        Ngày: &nbsp;
+                        <form action="" >
+                            <select id="date2" >
+                            </select>
+                        </form> &nbsp;
+                        Tháng:&nbsp;
+                        <form action="">
+                            <select name="month" id="month2">
+                            </select>
+                        </form> &nbsp;
+                        Năm: &nbsp;
+                        <form action="">
+                            <select name="year" id="year2">
+                            </select>
+                        </form> &nbsp;
+                    </div> 
+                </td>
+            </tr>
+            <tr>
+                <td>Trị giá giảm giá</td>
+                <td><input id="input2" type="text" name="Name"></td>
+            </tr>
+            
+        </table>
+        
+        
+
+    </div>
+</body>
+</html>

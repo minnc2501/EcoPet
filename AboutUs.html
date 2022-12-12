@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPet | About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/AboutUs.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+   
+    
+    
+</head>
+<body>
+    <header id="header" ></header>
+
+    <div class="image-container">
+        <div class="slide">
+            <div class="slideNumber">1</div>
+            <img id="img_slider" src="assets/img/AboutUs/EcoPet1.png">
+        </div>
+        <div class="slide">
+            <div class="slideNumber">2</div>
+            <img id="img_slider" src="assets/img/AboutUs/EcoPet2.png">
+        </div>
+        <div class="slide">
+            <div class="slideNumber">3</div>
+            <img id="img_slider" src="assets/img/AboutUs/EcoPet3.png">
+        </div>
+  
+        <!-- Next and Previous icon to change images -->
+        <a class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+        </a>
+        <a class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+        </a>
+    </div>
+    <br>
+  
+    <div style="text-align:center">
+        <span class="footerdot"
+            onclick="activeSlide(1)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(2)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(3)">
+        </span>
+    </div>
+     
+    <div class="app__container">
+        <div class="AboutUs">
+            <div class="intro"> 
+                <img id="img1" src="assets/img/AboutUs/hinh2.png" alt="">
+                <div >
+                    <h1 class="title">Về chúng tôi</h1>
+                    <div class="content1">    
+                        <h2 class="title1">Hành trình khám phá thức ăn xanh - sạch dành cho thú cưng</h2>
+                        <p class="justify">
+                            Ecopet được thành lập năm 2022 với mục đích lan tỏa năng lượng xanh đến những người yêu chó mèo.
+                        </p>
+                        <p class="justify">
+                            EcoPet cung cấp các loại thức ăn tự nhiên cao cấp vừa tốt cho sức khỏe vừa bổ dưỡng. Giờ đây bạn không cần 
+                            lo lắng về nguồn dinh dưỡng và niềm vui của thú cưng của bạn. Ecopet cung cấp cho thú cưng của bạn tất cả 
+                            những thứ chúng cần để có một cuộc sống khỏe mạnh lâu dài và hạnh phúc.                    
+                        </p>
+                        <p class="justify">
+                            Với sứ mệnh đưa những sản phẩm xanh, sạch, thân thiện với môi trường đi kèm với chất lượng tốt, 
+                            cung cấp đầy đủ chất dinh dưỡng, niềm vui cho thú cưng. Ecopet luôn hướng đến sự hài lòng của khách hàng, 
+                            cam kết mang đến những sản phẩm chất lượng bằng chính sự trân trọng, tình yêu với môi trường và động vật, 
+                            tạo nên niềm hạnh phúc trên gương mặt khách hàng và những chú cún, chú mèo đáng yêu và trở thành thương 
+                            hiệu cung cấp thức ăn, đồ chơi hàng đầu Việt Nam. 
+                        <p class="justify">
+                            Sản phẩm của EcoPet được làm từ các nguyên liệu thân thiện với con người. Thức ăn được tuyển chọn trực tiếp 
+                            từ xưởng sản xuất để đảm bảo về chất lượng.
+                        </p>
+                    </div> 
+                </div>
+                
+            </div>
+
+            <div class="intro" >
+                <h1 class="title">Tại sao nên mua sản phẩm tại <span style="color: #AC3B61;">EcoPet?</span></h1>
+                <p class="content2">
+                    Xuất phát từ lòng yêu thương động vật và ý thức bảo vệ môi trường ngày càng xanh, sạch, đẹp. Ecopet hướng đến cung cấp 
+                    nguồn thức ăn healthy và fresh cho thú cưng. Thú cưng của khách hàng cũng chính là thú cưng của Ecopet. Tại Ecopet, 
+                    khách hàng sẽ tự do lựa chọn những loại thức ăn, phụ kiện, đồ chơi thú cưng có nguồn gốc xuất xứ từ tự nhiên, vừa đảm bảo 
+                    an toàn cho thú cưng của bạn vừa góp phần làm cho môi trường ngày càng xanh, sạch, đẹp.
+                </p>
+                <div class="table1">
+                    <table class="tbl_element">
+                        <tr>
+                            <td><img id="img_element" src="assets/img/AboutUs/element1.jpg" /></td>
+                            <td><img id="img_element" src="assets/img/AboutUs/element2.jpg" /></td>
+                            <td><img id="img_element" src="assets/img/AboutUs/element3.jpg" /></td>
+                        </tr>
+                        <tr >
+                            <td ><p id="element">EcoPet là một thương hiệu cung cấp sản phẩm xanh - sạch dành cho thú cưng,  giúp bạn thể hiện trách nhiệm với xã hội.</p></td>
+                            <td ><p id="element">Đa dạng các sản phẩm cho chó và mèo, được EcoPet nghiên cứu và cho ra thị trường những sản phẩm hoàn hảo nhất.</p></td>
+                            <td ><p id="element">Đội ngũ nhân viên trẻ trung, năng động nhưng rất giàu kinh nghiệm về lĩnh vực chăm sóc thú cưng và thấu hiểu chúng.</p></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+
+            <div>
+                <h1 class="title">Đánh giá từ khách hàng</h1>
+               
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="card-thumb">
+                                <img src="assets/img/AboutUs/Customer1.jpg" class="client-img" alt="">
+                                <span class="client-name">Lan Võ</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="review">Rất ok luôn nha, bé Bi nhà mình thích lắm. Shop hỗ trợ tận tình, cám y hình thơm sữa. Giao hàng còn nhanh nữa. Sẽ luôn ủng hộ shop. 20 điểm luôn</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-thumb">
+                                <img src="assets/img/AboutUs/Customer2.jpg" class="client-img" alt="">
+                                <span class="client-name">Thanh Thảo</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="review">Hạt thơm thơm đa hình dạng, bé nhà mình ăn ngon miệng lắm luôn. Sản phẩm lại còn từ thiên nhiên nữa. Bé nhà mình thích ăn hạt này lắm, vừa rẻ vừa nhiều vừa tiện nên mua nha mn.</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-thumb">
+                                <img src="assets/img/AboutUs/Customer3.jpg" class="client-img" alt="">
+                                <span class="client-name">Thu Thảo</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="review">Cún mình rất kén ăn mà trúng ăn loại hạt này thì rất thích. Mua lại không biết bao nhiêu lần rồi. Giao hàng nhanh lắm, giá còn rẻ nữa, nên mua nha mọi người</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicators">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            
+                <script src="assets/js/app.js"></script>
+            
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script type="text/javascript" src="assets/js/script.js"></script>
+ 
+        </div>
+    </div>
+
+
+
+    <footer id="footer"></footer>
+
+    <script>
+        var slideIndex = 1;
+        displaySlide(slideIndex);
+  
+        function moveSlides(n) {
+            displaySlide(slideIndex += n);
+        }
+  
+        function activeSlide(n) {
+            displaySlide(slideIndex = n);
+        }
+  
+        /* Main function */
+        function displaySlide(n) {
+            var i;
+            var totalslides =
+                document.getElementsByClassName("slide");
+             
+            var totaldots =
+                document.getElementsByClassName("footerdot");
+             
+            if (n > totalslides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = totalslides.length;
+            }
+            for (i = 0; i < totalslides.length; i++) {
+                totalslides[i].style.display = "none";
+            }
+            for (i = 0; i < totaldots.length; i++) {
+                totaldots[i].className =
+                totaldots[i].className.replace(" active", "");
+            }
+            totalslides[slideIndex - 1].style.display = "block";
+            totaldots[slideIndex - 1].className += " active";
+            
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

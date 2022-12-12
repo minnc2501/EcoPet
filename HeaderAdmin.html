@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Admin</title>
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="grid wide">
+            
+            <!-- Header with search -->
+            <div class="header-with-search ">
+                <label for="mobile-search-checkbox" class="header__mobile-search">
+                    <i class="fas fa-search header__mobile-search-icon"></i>
+                </label>
+
+                <div class="header__logo hide-on-tablet">
+                    <a href="#" class="header__logo-link">
+                        <img class="header__logo-img" src="./assets/img/Logo2-01 (1).png" alt="">
+                    </a>
+                </div>
+                
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-search-checkbox">
+                    <!-- Search history -->
+                <div class="header__search" style="margin-right: 100px;">
+                    <div class="header__search-input-wrap ">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Thức ăn hạt mềm cho chó Zenith ADULT vị CỪU & Khoai Tây 1.2kg</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="header__user-wrap hide-on-mobile-tablet" style="margin-left: -100px;">
+                    <div class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avatardefault.png" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Nguyễn Thu Thảo</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item"><a href="">Tài khoản của tôi</a></li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate"><a href="">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <ul class="header__sort-bar">
+            <li class="header__sort-item header__sort-item--active">
+                <a href="DashboardAdmin.html" class="header__sort-link ">Dashboard</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="ProductAdmin.html" class="header__sort-link">Sản phẩm</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="CouponAdmin.html" class="header__sort-link">Mã giảm giá</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="OrderAdmin.html" class="header__sort-link">Đơn hàng</a>
+            </li>
+            
+        </ul>
+        <nav class="header__navigationBar hide-on-mobile-tablet
+            <div class="grid wide">
+                <ul class="header__navigationBar-list">
+                    <li class="header__navigationBar-item">
+                        <a href="DashboardAdmin.html">Dashboard</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="ProductAdmin.html">Sản phẩm</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="CouponAdmin.html">Mã giảm giá</a>
+                    </li>
+                    <li class="header__navigationBar-item">
+                        <a href="OrderAdmin.html">Đơn hàng</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPet | Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/productDetail.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="app__container " style="margin-top: 40px;">
+        <div class="grid wide">
+            <div class="detail__heading hide-on-mobile">
+                <a href="#">Ecopet > </a>
+                <a href="#">Chăm sóc chó cưng > </a>
+                <p>Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef</p>
+            </div>
+            <div class="detail__container row">
+                <div class="left col l-4 m-4 c-12">
+                    <div class="image">
+                        <img src="assets/img/banh-thuong-cho-cho-vi-thit-bo-vegebrand-orgo-freshening-biscuit-bacon-beef-400x400.webp" alt=""/>
+                    </div>
+                </div>
+                <div class="right col l-8 m-8 c-12">
+                    <div class="product__content">
+                        <div class="product__content-heading">
+                            <h3>Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef</h3>
+                        </div>
+                        <ul class="product__content-rate-list">
+                            <li class="product__content-rate-item">
+                                <div class="product__content-rate-item__text">3.9</div>
+                                <div class="detail-product-item__rating">
+                                    <i class="detail-product-item__star-gold fas fa-star"></i>
+                                    <i class="detail-product-item__star-gold fas fa-star"></i>
+                                    <i class="detail-product-item__star-gold fas fa-star"></i>
+                                    <i class="detail-product-item__star-gold fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="product__content-rate-item">
+                                <div class="product__content-rate-item__text number2">62</div>
+                                <div class="product__content-rate-item__text text2">Đánh giá</div>
+                            </li>
+                            <li class="product__content-rate-item">
+                                <div class="product__content-rate-item__text number2">142</div>
+                                <div class="product__content-rate-item__text text2">Đã bán</div>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <div class="detail-product-item__price">
+                            <span class="detail-product-item__price-text">Giá:</span>
+                            <span class="detail-product-item__price-old">27.000 ₫</span>
+                            <span class="detail-product-item__price-current">25.000 ₫</span>
+                        </div>
+                        <div class="quantity_minimum_note">
+                            <div class="quantity buttons_added clearfix">
+                                <span>Số lượng: </span>
+                                <input type="button" value="-" class="qtyControl minus">
+                                <input type="number" step="1" min="1" max="0" id="pdQuantity" name="quantity" value="1" class="input-text qty text" size="4">
+                                <input type="button" value="+" class="qtyControl plus">
+                            </div>
+                            <p class="note">Trọng lượng: 2000gram</p>
+                        </div>
+                        <div class="actionBuy clearfix">
+                            <input type="hidden" name="properties[tag]" value="lybinh,voucher">	
+                                <button type="submit" id="add-cart-detail" class="styleBtnAdd">
+                                    <i class="cart-detail-icon fas fa-shopping-cart"></i>
+                                    <span>Mua ngay</span>
+                                </button>
+                                <button type="submit" id="add-cart-detail-fly" class="styleBtnAdd">
+                                    <span>
+                                        Thêm vào giỏ hàng
+                                    </span>
+                                </button>
+                        </div>
+                        <div class="note-sku clearfix">
+                            <strong>Lưu ý: </strong> 
+                            Bao bì và màu sản phẩm có thể thay đổi giữa các đợt nhập hàng
+                        </div>
+                        <div class="fresh_note fresh_detail">
+                            THỜI GIAN GIAO HÀNG CỦA CÁC ĐƠN HÀNG CÓ SẢN PHẨM TƯƠI SỐNG:<br>
+                            - Đơn hàng đặt trước 15h mỗi ngày sẽ được giao cùng ngày.<br>
+                            - Đối với những đơn hàng đặt sau 15h, sẽ được giao vào ngày hôm sau.<br>
+                            *Lưu ý: đơn hàng tươi sống chỉ áp dụng ở khu vực Hồ Chí Minh (trừ Huyện Nhà Bè, Bình chánh, Hóc Môn, Củ Chi).<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-heading">
+				<h2 class="bg-heading">
+					<a href="javascript:void(0)">Sản phẩm cùng nhóm</a>
+				</h2>
+			</div>
+            <div class="row flash-sale__list filtering ">
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/pate-cho-cho-nuoc-sot-vi-thit-bo-pedigree-pouch-beef-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef">
+                            Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">27.000 ₫</span>
+                            <span class="home-product-item__price-current">25.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 7</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">Pedigree</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">2%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/xuong-cho-cho-vi-thit-bo-le-vegebrand-orgo-nutrients-beef-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Xương cho chó vị thịt bò VEGEBRAND Orgo Nutrients Beef">
+                            Xương cho chó vị thịt bò VEGEBRAND Orgo Nutrients Beef
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">37.000 ₫</span>
+                            <span class="home-product-item__price-current">25.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 192</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">Orgo</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">29%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/xuong-canxi-cho-cho-vegebrand-orgo-high-calcium-cheese-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Xương Canxi cho chó VEGEBRAND Orgo High Calcium Cheese">
+                            Xương Canxi cho chó VEGEBRAND Orgo High Calcium Cheese
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">46,900 ₫</span>
+                            <span class="home-product-item__price-current">37,900 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 11</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">Orgo</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">20%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/pate-cho-cho-ho-tro-chuc-nang-gan-va-sang-mat-iris-benefit-for-eyes-liver-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Pate cho chó hỗ trợ chức năng gan và sáng mắt IRIS Benefit For Eyes & Liver">
+                            Pate cho chó hỗ trợ chức năng gan và sáng mắt IRIS Benefit For Eyes & Liver
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">40.000 ₫</span>
+                            <span class="home-product-item__price-current">35.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 4</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">Pedigree</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">8%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/vong-co-cho-meo-kem-day-dat-co-mini-hand-in-hand-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Vòng cổ chó mèo kèm dây dắt cỡ mini HAND IN HAND">
+                            Vòng cổ chó mèo kèm dây dắt cỡ mini HAND IN HAND
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">90.000 ₫</span>
+                            <span class="home-product-item__price-current">70.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 144</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">HAND IN HAND</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">16%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/chuong-luc-lac-cho-cho-meo-paw-nhieu-sac-mau-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Chuông lục lạc cho chó mèo PAW nhiều sắc màu">
+                            Chuông lục lạc cho chó mèo PAW nhiều sắc màu
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">12.000 ₫</span>
+                            <span class="home-product-item__price-current">10.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 5</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">PAW</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">2%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/ro-mom-cho-hinh-mo-vit-paw-aduck-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Rọ mõm chó hình mỏ vịt PAW Aduck">
+                            Rọ mõm chó hình mỏ vịt PAW Aduck
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">90.000 ₫</span>
+                            <span class="home-product-item__price-current">75.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 8</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">PAW</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">18%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/vong-co-cho-meo-kem-day-dat-co-be-hand-in-hand-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Vòng cổ chó mèo kèm dây dắt cỡ bé HAND IN HAND">
+                            Vòng cổ chó mèo kèm dây dắt cỡ bé HAND IN HAND
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">90.000 ₫</span>
+                            <span class="home-product-item__price-current">80.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 92</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">HAND IN HAND</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">12%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/xich-cho-cho-kem-vong-co-hand-in-hand-reflective-collar-leash-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash">
+                            Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">220.000 ₫</span>
+                            <span class="home-product-item__price-current">200.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 46</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">HAND IN HAND</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">10%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/cat-ve-sinh-cho-meo-trixiesilikatstreu-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Cát vệ sinh thủy tinh cho mèo TRIXIE Silikatstreu">
+                            Cát vệ sinh thủy tinh cho mèo TRIXIE Silikatstreu
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">180.000 ₫</span>
+                            <span class="home-product-item__price-current">160.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 96</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">TRIXIE Silikatstreu</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">9%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/pate-cho-meo-vi-nuoc-sot-ca-ngu-whiskas-tuna-flavour-sauce1-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Pate cho mèo vị nước sốt cá ngừ WHISKAS Tuna Flavour Sauce">
+                            Pate cho mèo vị nước sốt cá ngừ WHISKAS Tuna Flavour Sauce
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">30.000 ₫</span>
+                            <span class="home-product-item__price-current">25.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 52</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">WHISKAS</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">6%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/Xit-bo-tat-xau-cho-meo-joyce-dolls-pet-repellent-Spray-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Xịt bỏ tật xấu chó mèo JOYCE & DOLLS Pet Repellent Spray">
+                            Xịt bỏ tật xấu chó mèo JOYCE & DOLLS Pet Repellent Spray
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">160.000 ₫</span>
+                            <span class="home-product-item__price-current">120.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 163</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">JOYCE & DOLLS</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">25%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/pate-cho-meo-vi-nuoc-sot-thit-bo-whiskas-beef-flavour-sauce-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Pate cho mèo vị nước sốt thịt bò WHISKAS Beef Flavour Sauce">
+                            Pate cho mèo vị nước sốt thịt bò WHISKAS Beef Flavour Sauce
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">50.000 ₫</span>
+                            <span class="home-product-item__price-current">25.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 123</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">WHISKAS</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">50%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col  l-2-4 m-4 c-6">
+                    <a href="#" class="home-product-item">
+                        <div class="home-product-item__img" style="background-image: url(./assets/img/thuoc-xo-giun-cho-meo-bayer-drontal-cat-400x400.webp)"></div>
+                        <h4 class="home-product-item__name" title="Thuốc xổ giun cho mèo BAYER Drontal Cat">
+                            Thuốc xổ giun cho mèo BAYER Drontal Cat
+                        </h4>
+                        <div class="home-product-item__price">
+                            <span class="home-product-item__price-old">75.000 ₫</span>
+                            <span class="home-product-item__price-current">55.000 ₫</span>
+                        </div>
+                        <div class="home-product-item__action">
+                            <span class="home-product-item__like home-product-item__like--liked">
+                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                            </span>
+                            <div class="home-product-item__rating">
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="span home-product-item__sold">đã bán 46</div>
+                        </div>
+    
+                        <div class="home-product-item__origin">
+                            <span class="home-product-item__brand">BAYER</span>
+                            <span class="home-product-item__origin-name">Còn hàng</span>
+                        </div>
+                        <div class="home-product-item__favourite">
+                            <i class="fas fa-check"></i>
+                            <span>Yêu thích</span>
+                        </div>
+                        <div class="home-product-item__sale-off">
+                            <span class="home-product-item__sale-off-percent">30%</span>
+                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <di id="footer"></di>
+    <script src="/assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

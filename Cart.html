@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPet | Giỏ hàng</title>
+
+    <link rel="stylesheet" href="assets/css/Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="flex-col align-center">
+            <h1 class="text-center">Giỏ hàng</h1>
+            <div class="flex-row container align-center" >
+                <div class="child1 flex-col p3 align-center " >
+                    <!-- ProductItem -->
+                    <div class="cart-item flex-row align-center p3 center">
+                        <img src="assets/img/sanpham17.png" alt="" width="35%" height="fit-content"
+                            style="max-width: 250px;">
+                        <div class="flex-col space-between " style="width: 60%; ">
+                            <h2>Equilibrio adult salmon 1.5kg – Hạt dành cho mèo trưởng thành vị cá hồi</h2>
+                            <h3>Giá: 259.000</h3>
+                            <table class="tablequantity"  >
+                                <tr>
+                                    <td>
+                                        <button><i class="far fa-heart"></i></button>
+
+                                    </td>
+                                    <td colspan="3">
+                                        <div class="inputgroup">
+                                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                                            <input type="number" step="1" max="25" min="1" value="1" name="quantity"
+                                                class="quantity-field">
+                                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button class="btnDelete btn-primary text-center" >X</button>
+                    </div>
+                    <!-- End ProductItem -->
+                    <!-- ProductItem -->
+                    <div class="cart-item flex-row align-center p4 center">
+                        <img src="assets/img/sanpham8.jpg" alt="" width="35%" height="fit-content"
+                            style="max-width: 250px;">
+                        <div class="flex-col space-between" style="width: 60%;">
+                            <h2>Prunus natural herb shampoo – sữa tắm chứa thảo mộc và chất kháng khuẩn tự nhiên 500ml</h2>
+                            <h3>Giá: 230.000</h3>
+                            <table class="tablequantity"  >
+                                <tr>
+                                    <td>
+                                        <button><i class="far fa-heart"></i></button>
+
+                                    </td>
+                                    <td colspan="3">
+                                        <div class="inputgroup">
+                                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                                            <input type="number" step="1" max="25" min="1" value="1" name="quantity"
+                                                class="quantity-field">
+                                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button class="btnDelete btn-primary text-center" >X</button>
+                    </div>
+                    <!-- End ProductItem -->
+                    <div class="right w-100">
+                        <h3>Tổng cộng</h3>
+                        <hr style="border-color: #323334;">
+                        <h1 id="total1">950.000</h1>
+                    </div>
+                </div>
+                
+                <div class=" child2 flex-col p3 h-fit" style="min-width: 16em;">
+                    <div class=" flex-col align-center p3" style="background-color: #ff9dbe;">
+                        <h2 class="text-center all-caps m0">ÁP DỤNG MÃ GIẢM GIÁ </h2>
+                        <div class="inputgroup flex-row center">
+                            <input class="w-75" type="text">
+                            <input class="white-text" type="button" value="THÊM">
+                        </div>
+                        <br>
+                        
+                    </div>
+                    <br>
+                    <div class="flex-col align-center p3" style="background-color: #ff9dbe;">
+                        <h2 class="all-caps m0 text-center" >THÔNG TIN ĐƠN HÀNG</h2>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3 class="m0">Giá trị đơn hàng:</h3>
+                                </td>
+                                <td>
+                                    <h3 id="total2" class="m0">950.000</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="m0">Shipping</h3>
+                                </td>
+                                <td>
+                                    <h3 class="m0">0.0 $</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="m0">Total:</h3>
+                                </td>
+                                <td>
+                                    <h3 class="m0">950.000</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="btn-secondary" onclick="window.location.href='Payment.html'">Tiếp tục thanh
+                            toán</button>
+                    </div>
+                </div>
+                
+                <!-- THÔNG TIN ĐƠN HÀNG 2 -->
+               
+            </div>
+            
+
+        </div>
+    </main>
+    <div id="myModal" class="modal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text-center">Bạn chắc chắn muốn xoá sản phẩm này khỏi giỏ hàng chứ?</p>
+            <div class="flex-row center">
+                <button id="btnYes" class="btn-primary">Xoá khỏi giỏ hàng</button>
+                <button id="btnNo" class="btn-secondary">Huỷ bỏ</button>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footer"></footer>
+</body>
+<script src="assets/app/app.js"></script>
+<script>
+    function incrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal)) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+            $().text = $(e.target).closest('.price')
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+        }
+    }
+
+    function decrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal) && currentVal > 0) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+        }
+    }
+
+    $('.inputgroup').on('click', '.button-plus', function (e) {
+        incrementValue(e);
+    });
+
+    $('.inputgroup').on('click', '.button-minus', function (e) {
+        decrementValue(e);
+    });
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("btnDelete");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var btnYes = document.getElementById('btnYes');
+    var btnNo = document.getElementById('btnNo');
+
+    var target = 0;
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].onclick = function () {
+            modal.style.display = "block";
+            target = i;
+        }
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    btnYes.onclick = function () {
+        var item = document.getElementsByClassName('cart-item')[target];
+        item.style.display = "none";
+        modal.style.display = "none";
+
+    }
+    btnNo.onclick = function () {
+
+        modal.style.display = "none";
+
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var btnHeart = document.getElementsByClassName('fa-heart');
+    for (let i = 0; i < btnHeart.length; i++) {
+        btnHeart[i].onclick = function () {
+            if (this.classList.contains('fas')) {
+                this.classList.replace('fas', 'far');
+                this.style.color = "black";
+            } else {
+                this.classList.replace('far', 'fas');
+                this.style.color = "#ff4444";
+            }
+        }
+    }
+</script>
+
+</html>
