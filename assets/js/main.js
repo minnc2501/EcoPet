@@ -15,6 +15,14 @@ $(document).ready(function() {
       }
   });
 
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+        $('.header__navigationBar').addClass('fixed');
+    } else {
+        $('.header__navigationBar').removeClass('fixed');
+    }
+  });
+
   $('.social-right-fixed__messeger-img').on('click', function(event) {
 
     $('.social-right-fixed__window').toggleClass('show');

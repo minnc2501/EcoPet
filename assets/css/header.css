@@ -931,6 +931,7 @@ a.header__navbar-icon-link {
     display: flex;
     background-color: var(--primary-color);
     padding-left: 307px;
+    z-index: 9999;
 }
 
 .header__navigationBar-list {
