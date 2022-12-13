@@ -166,8 +166,7 @@
 
     </div>
     <footer id="footer"></footer>
-</body>
-<script src="assets/app/app.js"></script>
+    <script src="assets/app/app.js"></script>
 <script>
     function incrementValue(e) {
         e.preventDefault();
@@ -218,7 +217,10 @@
     var target = 0;
     for (let i = 0; i < btn.length; i++) {
         btn[i].onclick = function () {
+            console.log('da click');
             modal.style.display = "block";
+            modal.style.visibility = "visible";
+            modal.style.opacity = "1";
             target = i;
         }
     }
@@ -258,5 +260,7 @@
         }
     }
 </script>
+</body>
+
 
 </html>
